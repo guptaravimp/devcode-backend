@@ -1,6 +1,6 @@
 const SubSection = require("../models/SubSection")
 const Section = require("../models/Section");
-const { uploadImageToCloudinary } = require("../utils/ImageUploader");
+const { uploadImageToCloudinary } = require("../utils/imageUploader");
 const Course = require("../models/Course");
 // create subsection 
 exports.createSubSection = async (req, res) => {
