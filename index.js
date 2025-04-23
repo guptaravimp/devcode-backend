@@ -28,7 +28,7 @@ app.use(cookieParser());
 /// jo bhi request aapke frontend se aa rahi hai usse entertain karna hai 
 app.use(
     cors({
-        origin:"http://localhost:3001",
+        origin:"https://devcode-frontend-ehr9.vercel.app/",
         credentials:true,
     })
 )
