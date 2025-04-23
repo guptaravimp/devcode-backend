@@ -2,7 +2,7 @@
 const Course = require("../models/Course");
 const Profile=require("../models/Profile");
 const User=require("../models/User");
-const { uploadImageToCloudinary } = require("../utils/ImageUploader");
+const { uploadImageToCloudinary } = require("../utils/imageUploader");
 //// here we need to update profile that is user but initially see that during signup we put dummy data of all detail so we need to update beacuse intially it is INITIALLY CREATED 
 
 
