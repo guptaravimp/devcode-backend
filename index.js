@@ -5,7 +5,7 @@ const paymentRoutes=require("./routes/Payment")
 const courseRoutes=require("./routes/Course")
 const contactus=require("./routes/Contactus")
 const cookieParser=require("cookie-parser")
-const path = require("path");
+// const path = require("path");
 
 const fileupload=require("express-fileupload");
 
@@ -16,7 +16,7 @@ const cors = require('cors');
 const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT || 4000; // Fixed: Should be 4000 instead of 400
-const _dirname=path.resolve();
+// const _dirname=path.resolve();
 
 // database connection 
 const database = require("./config/database");
@@ -49,10 +49,10 @@ app.use("/api/v1/payment",paymentRoutes)
 app.use("/api/v1/course",courseRoutes)
 app.use("/api/v1/profile",profileRoutes)
 app.use("/api/v1/contact",contactus)
-app.use(express.static(path.join(_dirname,"/devcode/dist")))
-app.get('*',(req,res)=>{
-    res.sendFile(path.resolve(_dirname,"devcode","dist","index.html"))
-})
+// app.use(express.static(path.join(_dirname,"/devcode/dist")))
+// app.get('*',(req,res)=>{
+//     res.sendFile(path.resolve(_dirname,"devcode","dist","index.html"))
+// })
 // default routes 
 app.get("/", (req, res) => {
     return res.json({
